@@ -12,7 +12,7 @@ public class GeneradorDeCompiladores {
     
     private static void generarCompilador(){
         try {
-            String ruta = "C:\\Users\\BARRIOS\\Documents\\NetBeansProjects\\MakerC3D-master\\MakerC3D-master\\src\\org\\compi2\\codigo3d\\parser\\";
+            String ruta = "C:\\Users\\BARRIOS\\Documents\\NetBeansProjects\\MakerC3D-master\\MakerC3D_201020588\\MakerC3D-master\\src\\org\\compi2\\codigo3d\\parser\\";
             String opcFlex[] = { ruta + "lexico.flex", "-d", ruta };
             jflex.Main.generate(opcFlex);
             String opcCUP[] = { "-destdir", ruta, "-parser", "parser", ruta + "sintactico.cup" };
