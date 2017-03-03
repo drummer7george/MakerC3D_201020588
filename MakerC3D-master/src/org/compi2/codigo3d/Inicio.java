@@ -41,7 +41,7 @@ public class Inicio extends javax.swing.JFrame {
         });
 
         jTextField_Expresion.setFont(new java.awt.Font("Roboto Mono", 0, 18)); // NOI18N
-        jTextField_Expresion.setText("5 + a * b < a + 1 && b > 5");
+        jTextField_Expresion.setText("5 + a * b < a + 1 && b > 5 ");
 
         jTextArea_Codigo3Dgenerado.setColumns(20);
         jTextArea_Codigo3Dgenerado.setFont(new java.awt.Font("Roboto Mono Light", 0, 18)); // NOI18N
