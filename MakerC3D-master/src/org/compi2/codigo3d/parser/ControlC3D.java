@@ -7,6 +7,7 @@ package org.compi2.codigo3d.parser;
 public class ControlC3D {
     
     private static int temp = 0;
+    private static int et_temp = 0;
     private static String c3d = "";
     
     /**
@@ -16,12 +17,17 @@ public class ControlC3D {
     public static void reiniciar(){
         temp = 0;
         c3d = "";
+        et_temp=0;
     }
     
     /**
      * Genera el siguiente temporal.
      * @return El siguiente temporal (t$#)
      */
+    public static String generaEtTemp(){
+        return "L$"+et_temp++;
+    }
+    
     public static String generaTemp(){
         return "t$"+temp++;
     }
